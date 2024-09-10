@@ -189,41 +189,39 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            <em>
-            Diverse and realistic floor plan data are essential for the development of useful computer-aided methods in architectural design.
-            Today's large-scale floor plan datasets predominantly feature simple floor plan layouts, typically representing single-apartment dwellings only.
-            To compensate for the mismatch between current datasets and the real world, we develop <b>Modified Swiss Dwellings (MSD) </b> — the first large-scale floor plan dataset that contains a significant share of layouts of multi-apartment dwellings.
-            MSD features over <b>5.3K floor plans</b> of medium- to large-scale <b>building complexes</b>, covering over <b>18.9K distinct apartments</b>.
-            We validate that existing approaches for floor plan generation, while effective in simpler scenarios, cannot yet seamlessly address the challenges posed by MSD.
-            Our benchmark calls for new research in floor plan machine understanding.
-            <a href="https://github.com/caspervanengelenburg/msd" style="color: dodgerblue;">Code</a>
-              and <a href="https://www.kaggle.com/datasets/caspervanengelenburg/modified-swiss-dwellings" style="color: dodgerblue;">data</a> are open.
-            </em>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!--<section class="section hero is-light">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="columns is-centered has-text-centered">-->
+<!--      <div class="column is-three-fifths">-->
+<!--        <h2 class="title is-3">Abstract</h2>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            Diverse and realistic floor plan data are essential for the development of useful computer-aided methods in architectural design.-->
+<!--            Today's large-scale floor plan datasets predominantly feature simple floor plan layouts, typically representing single-apartment dwellings only.-->
+<!--            To compensate for the mismatch between current datasets and the real world, we develop <b>Modified Swiss Dwellings (MSD) </b> — the first large-scale floor plan dataset that contains a significant share of layouts of multi-apartment dwellings.-->
+<!--            MSD features over <b>5.3K floor plans</b> of medium- to large-scale <b>building complexes</b>, covering over <b>18.9K distinct apartments</b>.-->
+<!--            We validate that existing approaches for floor plan generation, while effective in simpler scenarios, cannot yet seamlessly address the challenges posed by MSD.-->
+<!--            Our benchmark calls for new research in floor plan machine understanding.-->
+<!--            <a href="https://github.com/caspervanengelenburg/msd" style="color: dodgerblue;">Code</a>-->
+<!--              and <a href="https://www.kaggle.com/datasets/caspervanengelenburg/modified-swiss-dwellings" style="color: dodgerblue;">data</a> are open.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 <!-- End paper abstract -->
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Dataset of MSD</h2>
       <div class="content has-text-justified">
           <p>
             MSD is an ML-ready dataset for floor plan generation and analysis at building-level scale.
-            The MSD dataset is derived from the <em><a href="https://zenodo.org/records/7788422" style="color: dodgerblue;">Swiss Dwellings database (v3.0.0)</a></em>.
+            The MSD dataset is derived from the <a href="https://zenodo.org/records/7788422" style="color: dodgerblue;">Swiss Dwellings database (v3.0.0)</a>.
             The MSD dataset contains highly-detailed 5372 floor plans of single- as well as multi-unit building complexes across Switzerland, hence extending the building scale w.r.t. of other well know floor plan datasets.
             Some highlights:
             <ul>
@@ -242,8 +240,8 @@
         <h2 class="subtitle has-text-centered">
           <b>MSD compared to RPLAN and LIFULL</b> —
           Rooms are colored on function (e.g., blue for "bedroom"). The functional diagrams (represented as graphs) are drawn on top of the floor plans.
-          MSD (right) significantly differs from <em><a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a></em> (left)
-          and <em><a href="https://www.nii.ac.jp/dsc/idr/en/lifull/" style="color: dodgerblue;">LIFULL</a></em> (middle), as it contains more complex and realistic floor plans.
+          MSD (right) significantly differs from <a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a> (left)
+          and <a href="https://www.nii.ac.jp/dsc/idr/en/lifull/" style="color: dodgerblue;">LIFULL</a> (middle), as it contains more complex and realistic floor plans.
         </h2>
       </div>
       <div class="item">
@@ -285,17 +283,17 @@
 
 
   <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Models</h2>
       <div class="content has-text-justified">
           <p>
             We developed two baseline models to benchmark MSD: a diffusion- and segmentation-based.
-            The former is built on-top-of <em><a href="https://arxiv.org/abs/2211.13287" style="color: dodgerblue;">HouseDiffusion</a></em> (HD)
+            The former is built on-top-of <a href="https://arxiv.org/abs/2211.13287" style="color: dodgerblue;">HouseDiffusion</a> (HD)
             — a state-of-the-art model for floor plan generation.
-            The latter combines a <em><a href="https://arxiv.org/abs/1505.04597" style="color: dodgerblue;">U-Net</a></em>
-            and <em><a href="https://arxiv.org/abs/1609.02907" style="color: dodgerblue;">graph convolutional network</a></em>.
+            The latter combines a <a href="https://arxiv.org/abs/1505.04597" style="color: dodgerblue;">U-Net</a>
+            and <a href="https://arxiv.org/abs/1609.02907" style="color: dodgerblue;">graph convolutional network</a>.
             Details of the models can be found in the figures below.
           </p>
         </div>
@@ -305,11 +303,11 @@
         <img src="static/images/mhd_scheme.png" alt="mhd_scheme"/>
         <h2 class="subtitle has-text-centered">
          <b> Model 1: Modified HouseDiffusion (MHD) </b> —
-          Our diffusion-based baseline is built on-top-of <em><a href="https://arxiv.org/abs/2211.13287" style="color: dodgerblue;">HouseDiffusion</a></em> (HD)
+          Our diffusion-based baseline is built on-top-of <a href="https://arxiv.org/abs/2211.13287" style="color: dodgerblue;">HouseDiffusion</a> (HD)
           — a state-of-the-art model for floor plan generation.
           A wall encoder is used to map the pre-processed building structure into corresponding wall embeddings.
           MHD expands HD by introducing an extra attention module (WCA) between the wall embeddings and corner features of the rooms.
-          A <em><a href="https://arxiv.org/abs/1710.10903" style="color: dodgerblue;">graph attention network</a></em> is separately trained to predict the room types from the zoning types, which are used to "color" the full layout.
+          A <a href="https://arxiv.org/abs/1710.10903" style="color: dodgerblue;">graph attention network</a> is separately trained to predict the room types from the zoning types, which are used to "color" the full layout.
        </h2>
      </div>
       <div class="item">
@@ -317,9 +315,9 @@
         <img src="static/images/unet_scheme.png" alt="unet_scheme"/>
         <h2 class="subtitle has-text-centered">
          <b> Model 2: Graph-informed U-Net (UN) </b> —
-          UN takes the building structure (image) as input to a <em><a href="https://arxiv.org/abs/1505.04597" style="color: dodgerblue;">U-Net</a></em>.
+          UN takes the building structure (image) as input to a <a href="https://arxiv.org/abs/1505.04597" style="color: dodgerblue;">U-Net</a>.
           The U-Net is composed of an encoder and decoder using the conventional up- and down-sampling 2D convolutions, resp., and includes skip connections between the encoder and decoder feature maps at equivalent feature map scales.
-          A <em><a href="https://arxiv.org/abs/1609.02907" style="color: dodgerblue;">graph convolutional network</a></em> is used to map the zoning graph to a feature vector which is concatenated to the latent space of the U-Net.
+          A <a href="https://arxiv.org/abs/1609.02907" style="color: dodgerblue;">graph convolutional network</a> is used to map the zoning graph to a feature vector which is concatenated to the latent space of the U-Net.
         </h2>
      </div>
   </div>
@@ -329,15 +327,15 @@
 <!-- End image carousel -->
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Results</h2>
       <div class="content has-text-justified">
           <p>
             Overall, the floor plans often look infeasible.
             We could, however, train MHD on RPLAN successfully (see suppl. mat.); hence, we believe that the poor results do <em>not</em> come from improper training.
-            Instead, we attribute the poor results to the more complex benchmark we set: more complex graphs; more irregularly shaped rooms; unit connectivity; no axis alignment; etc.
+            Instead, we attribute the somewhat poor results to the more complex benchmark we set: more complex graphs; more irregularly shaped rooms; unit connectivity; no axis alignment; etc.
           </p>
         </div>
 
@@ -358,9 +356,9 @@
 <!-- End image carousel -->
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title">Paper (incl. suppl. mat.)</h2>
 
       <iframe  src="static/pdfs/paper_and_supplement.pdf" width="100%" height="550">
@@ -373,7 +371,7 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <section class="section is-light" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{vanengelenburg2024msd,
