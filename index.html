@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
+  <meta name="description" content="ECCV 2024 paper ''">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>MSD - ECCV 2024</title>
+  <link rel="icon" type="image/x-icon" href="static/images/msd_icon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -57,27 +57,27 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Casper van Engelenburg</a><sup>*,1</sup>,</span>
+                <a href="https://www.tudelft.nl/staff/c.c.j.vanengelenburg/?cHash=a72f1da92639fa8301893a08d4b49da1" target="_blank">Casper van Engelenburg</a><sup>*,1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Fatemeh Mostafavi</a><sup>1</sup>,
+                  <a href="https://www.tudelft.nl/staff/f.mostafavi/?cHash=db57104f8776c2a1522b91c039845e84" target="_blank">Fatemeh Mostafavi</a><sup>1</sup>,
                 </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Emanuel Kuhn</a><sup>1</sup>,
+                    <a href="" target="_blank">Emanuel Kuhn</a><sup>1</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yuntae Jeon</a><sup>2</sup>,
+                    <a href="https://yuntaej.github.io/" target="_blank">Yuntae Jeon</a><sup>2</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Michael Franzen</a><sup>3</sup>,
+                    <a href="" target="_blank">Michael Franzen</a><sup>3</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Matthias Standfest</a><sup>3</sup>,
+                    <a href="https://standfest.science/" target="_blank">Matthias Standfest</a><sup>3</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jan van Gemert</a><sup>1</sup>,
+                    <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/pattern-recognition-bioinformatics/computer-vision-lab/people/jan-van-gemert" target="_blank">Jan van Gemert</a><sup>1</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Seyran Khademi</a><sup>1</sup>.
+                    <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/pattern-recognition-bioinformatics/computer-vision-lab/people/seyran-khademi" target="_blank">Seyran Khademi</a><sup>1</sup>.
                   </span>
                   </div>
 
@@ -169,11 +169,19 @@
         <img src="static/images/msd_examples_grid_small.png" alt="examples-msd-grid"/>
       </div>
       <h2 class="subtitle has-text-centered">
+        <b>A realistic floor plan dataset</b> —
         In this article, we propose and benchmark a new large-scale floor plan dataset, which we call [<b>M</b>]odified [<b>S</b>]wiss [<b>D</b>]wellings.
-        MSD exceeds other floor plan dataset, like <a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a> and
+        MSD exceeds other floor plan dataset, such as <a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a> and
         <a href="https://www.nii.ac.jp/dsc/idr/en/lifull/" style="color: dodgerblue;">LIFULL</a>, in terms of complexity and better represents what could be found in the real-world.
+        </br></br>
+        <b>Current models are not powerful enough</b> —
         Most interestingly is that today's models that are designed for floor plan generation — mostly specialized neural networks — seem not strong and/or smart enough to tackle the complexity of MSD.
         Exciting new research in floor plan generation as well as understanding lies ahead.
+        </br></br>
+        <b>Data formats and coding guidelines</b> —
+        The floor plans come in various forms (image, vector, and graph).
+        Additionally, we prepared <a href="https://github.com/cvaad-workshop/iccv23-challenge/blob/main/guidelines.ipynb" style="color: dodgerblue;">clear coding guidelines</a> on how to effectively load
+        and visualize the floor plans and their corresponding access graphs.
       </h2>
     </div>
   </div>
@@ -280,10 +288,15 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Baselines</h2>
+      <h2 class="title is-3">Models</h2>
       <div class="content has-text-justified">
           <p>
-            We developed two baseline models to benchmark MSD: a diffusion- and segmentation-based approach.
+            We developed two baseline models to benchmark MSD: a diffusion- and segmentation-based.
+            The former is built on-top-of <em><a href="https://arxiv.org/abs/2211.13287" style="color: dodgerblue;">HouseDiffusion</a></em> (HD)
+            — a state-of-the-art model for floor plan generation.
+            The latter combines a <em><a href="https://arxiv.org/abs/1505.04597" style="color: dodgerblue;">U-Net</a></em>
+            and <em><a href="https://arxiv.org/abs/1609.02907" style="color: dodgerblue;">graph convolutional network</a></em>.
+            Details of the models can be found in the figures below.
           </p>
         </div>
       <div id="results-carousel" class="carousel results-carousel">
