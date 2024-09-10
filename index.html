@@ -20,7 +20,7 @@
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Floor Plan Dataset; Access Graph; Graph Machine Learning; Diffusion Model; Image Generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -52,28 +52,50 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes</h1>
+
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Casper van Engelenburg</a><sup>*,1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Fatemeh Mostafavi</a><sup>1</sup>,
+                </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Emanuel Kuhn</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yuntae Jeon</a><sup>2</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Michael Franzen</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Matthias Standfest</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jan van Gemert</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Seyran Khademi</a><sup>1</sup>.
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">
+                      <sup>1</sup> Delft University of Technology <br>
+                      <sup>2</sup> Sungkyunkwan University <br>
+                      <sup>3</sup> Indepedent Researcher <br><br>
+                      European Conference on Computer Vision (ECCV), 2024
+                    </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Main author — c.c.j.vanengelenburg@tudelft.nl</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2407.10121" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -84,7 +106,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="static/pdfs/supplement.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -93,9 +115,19 @@
                     </a>
                   </span>
 
-                  <!-- Github link -->
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.10121" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a> <br>
+              </span>
+                      <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/caspervanengelenburg/msd" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -103,17 +135,17 @@
                     <span>Code</span>
                   </a>
                 </span>
-
-                <!-- ArXiv abstract Link -->
+                      <!-- Dataset Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://www.kaggle.com/datasets/caspervanengelenburg/modified-swiss-dwellings" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fa fa-database"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Dataset</span>
                 </a>
               </span>
+
             </div>
           </div>
         </div>
@@ -122,18 +154,26 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
+  <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <!--
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
+      -->
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/msd_examples_grid_small.png" alt="examples-msd-grid"/>
+      </div>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        In this article, we propose and benchmark a new large-scale floor plan dataset, which we call [<b>M</b>]odified [<b>S</b>]wiss [<b>D</b>]wellings.
+        MSD exceeds other floor plan dataset, like <a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a> and
+        <a href="https://www.nii.ac.jp/dsc/idr/en/lifull/" style="color: dodgerblue;">LIFULL</a>, in terms of complexity and better represents what could be found in the real-world.
+        Most interestingly is that today's models that are designed for floor plan generation — mostly specialized neural networks — seem not strong and/or smart enough to tackle the complexity of MSD.
+        Exciting new research in floor plan generation as well as understanding lies ahead.
       </h2>
     </div>
   </div>
@@ -148,7 +188,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            <em>
+            Diverse and realistic floor plan data are essential for the development of useful computer-aided methods in architectural design.
+            Today's large-scale floor plan datasets predominantly feature simple floor plan layouts, typically representing single-apartment dwellings only.
+            To compensate for the mismatch between current datasets and the real world, we develop <b>Modified Swiss Dwellings (MSD) </b> — the first large-scale floor plan dataset that contains a significant share of layouts of multi-apartment dwellings.
+            MSD features over <b>5.3K floor plans</b> of medium- to large-scale <b>building complexes</b>, covering over <b>18.9K distinct apartments</b>.
+            We validate that existing approaches for floor plan generation, while effective in simpler scenarios, cannot yet seamlessly address the challenges posed by MSD.
+            Our benchmark calls for new research in floor plan machine understanding.
+            <a href="https://github.com/caspervanengelenburg/msd" style="color: dodgerblue;">Code</a>
+              and <a href="https://www.kaggle.com/datasets/caspervanengelenburg/modified-swiss-dwellings" style="color: dodgerblue;">data</a> are open.
+            </em>
           </p>
         </div>
       </div>
@@ -162,35 +211,64 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Dataset of MSD</h2>
+      <div class="content has-text-justified">
+          <p>
+            MSD is an ML-ready dataset for floor plan generation and analysis at building-level scale.
+            The MSD dataset is derived from the <em><a href="https://zenodo.org/records/7788422" style="color: dodgerblue;">Swiss Dwellings database (v3.0.0)</a></em>.
+            The MSD dataset contains highly-detailed 5372 floor plans of single- as well as multi-unit building complexes across Switzerland, hence extending the building scale w.r.t. of other well know floor plan datasets.
+            Some highlights:
+            <ul>
+              <li><b>Origin</b> — MSD is the first <em>European</em> large-scale floor plan dataset originating from;</li>
+              <li><b>Realism</b> — MSD is the first large-scale floor plan dataset that contains information on the <em>connectivity between the apartments</em>; in addition, <em>compass orientation</em> is included;</li>
+              <li><b>Complexity</b> — MSD exceeds other datasets in the the average number of corners per room, rooms per apartment, and apartments per floor; furthermore, MSD has the largest share of irregularly-shaped rooms;</li>
+              <li><b>Information</b> — MSD contains floor plan <em>raster images</em>, <em>vectorized formats</em>, and corresponding <em>access graphs</em>;</li>
+              <li><b>Size & Diversity</b> — MSD has the largest <em>diversity of access graphs</em>.</li>
+            </ul>
+          </p>
+        </div>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/msd_compared.png" alt="msd_compared"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          <b>MSD compared to RPLAN and LIFULL</b> —
+          Rooms are colored on function (e.g., blue for "bedroom"). The functional diagrams (represented as graphs) are drawn on top of the floor plans.
+          MSD (right) significantly differs from <em><a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a></em> (left)
+          and <em><a href="https://www.nii.ac.jp/dsc/idr/en/lifull/" style="color: dodgerblue;">LIFULL</a></em> (middle), as it contains more complex and realistic floor plans.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/msd_representation.png" alt="msd_representation"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          <b>Representation of floor plan data</b> —
+          MSD contains three types of data.
+          (Left) The floor plan is the complete layout of the floor of the building, including the position and shape of the rooms, doors, and windows.
+          The areas are labeled by color (see legends).
+          There are two category systems:
+          1) category is based on the type of the area (’room type’), in which each area has a room type (e.g., "bedroom");
+          and 2) category is based on the zone of the area (’zone type’), in which each areas has a zone type (e.g., "zone1").
+          (Middle) The associated room and zoning graphs are depicted on the right of the floor plans.
+          The node colors are equivalent to the colors of the floor plan.
+          The position of each node is taken as the centroid of the area that the node
+          represents.
+          (Right) A binary image of the necessary structural components of the floor
+          plan.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/msd_stats.png" alt="msd_stats"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+         <b> Area and unit distributions MSD </b> —
+          The unit distribution per floor (right), area distribution per floor (middle), and area distribution per unit (right) are plotted as histograms.
+          The x-axis specifies the number of units or areas, and the y-axis specifies the frequency.
+          From the unit distribution plot, it is apparent that MSD comprises mostly floor plans that contain between 2 to 9 units.
+          MSD comprises mostly floor plans that have between 15 and 50 areas, with a peak of around 25.
+          The area distribution per unit is similar to RPLAN and LIFULL, ranging between 3 and 15 areas per unit and a median around 7 areas per unit.
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
@@ -198,74 +276,81 @@
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
+  <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Baselines</h2>
+      <div class="content has-text-justified">
+          <p>
+            We developed two baseline models to benchmark MSD: a diffusion- and segmentation-based approach.
+          </p>
+        </div>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
+     <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/mhd_scheme.png" alt="mhd_scheme"/>
+        <h2 class="subtitle has-text-centered">
+         <b> Model 1: Modified HouseDiffusion (MHD) </b> —
+          Our diffusion-based baseline is built on-top-of <em><a href="https://arxiv.org/abs/2211.13287" style="color: dodgerblue;">HouseDiffusion</a></em> (HD)
+          — a state-of-the-art model for floor plan generation.
+          A wall encoder is used to map the pre-processed building structure into corresponding wall embeddings.
+          MHD expands HD by introducing an extra attention module (WCA) between the wall embeddings and corner features of the rooms.
+          A <em><a href="https://arxiv.org/abs/1710.10903" style="color: dodgerblue;">graph attention network</a></em> is separately trained to predict the room types from the zoning types, which are used to "color" the full layout.
+       </h2>
+     </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/unet_scheme.png" alt="unet_scheme"/>
+        <h2 class="subtitle has-text-centered">
+         <b> Model 2: Graph-informed U-Net (UN) </b> —
+          UN takes the building structure (image) as input to a <em><a href="https://arxiv.org/abs/1505.04597" style="color: dodgerblue;">U-Net</a></em>.
+          The U-Net is composed of an encoder and decoder using the conventional up- and down-sampling 2D convolutions, resp., and includes skip connections between the encoder and decoder feature maps at equivalent feature map scales.
+          A <em><a href="https://arxiv.org/abs/1609.02907" style="color: dodgerblue;">graph convolutional network</a></em> is used to map the zoning graph to a feature vector which is concatenated to the latent space of the U-Net.
+        </h2>
+     </div>
   </div>
+</div>
+</div>
 </section>
-<!-- End video carousel -->
+<!-- End image carousel -->
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results</h2>
+      <div class="content has-text-justified">
+          <p>
+            Overall, the floor plans often look infeasible.
+            We could, however, train MHD on RPLAN successfully (see suppl. mat.); hence, we believe that the poor results do <em>not</em> come from improper training.
+            Instead, we attribute the poor results to the more complex benchmark we set: more complex graphs; more irregularly shaped rooms; unit connectivity; no axis alignment; etc.
+          </p>
+        </div>
 
-
-
-
+     <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/results_viz.png" alt="results_viz"/>
+        <h2 class="subtitle has-text-centered">
+         <b> Example generations of MHD and UN </b> —
+          Columns 1 and 2 show the inputs: the zone graph and building structure respectively.
+          Columns 3 - 6 show the floor plans generated by the MHD variants.
+          Columns 7 - 9 show the floor plans generated by the UN variants.
+          Column 10 shows the ground truth.
+        </h2>
+     </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Paper (incl. suppl. mat.)</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/paper_and_supplement.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -278,7 +363,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{vanengelenburg2024msd,
+        title={MSD: A Benchmark Dataset for Floor Plan Generation of Building Complexes},
+        author={van Engelenburg, Casper and Mostafavi, Fatemeh and Kuhn,
+                   Emanuel and Jeon, Yuntae and Franzen, Michael and Standfest,
+                   Matthias and van Gemert, Jan and Khademi, Seyran},
+        journal={arXiv preprint arXiv:2407.10121},
+        year={2024}
+    }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
