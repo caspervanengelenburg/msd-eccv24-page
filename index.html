@@ -14,10 +14,10 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="MSD Floor Plan Dataset">
+  <meta name="twitter:description" content="A Benchmark Dataset for Floor Plan Generation of Building Complexes">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/msd_examples_grid_small.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Floor Plan Dataset; Access Graph; Graph Machine Learning; Diffusion Model; Image Generation">
@@ -91,9 +91,10 @@
                     <span class="eql-cntrb"><small><br><sup>*</sup>Main author — c.c.j.vanengelenburg@tudelft.nl</small></span>
                   </div>
 
+
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                      <!--
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/2407.10121" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -103,8 +104,9 @@
                         <span>Paper</span>
                       </a>
                     </span>
+                    -->
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Supplementary PDF link
                     <span class="link-block">
                       <a href="static/pdfs/supplement.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -114,17 +116,18 @@
                       <span>Supplementary</span>
                     </a>
                   </span>
+                  -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2407.10121" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2407.10121" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a> <br>
-              </span>
                       <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/caspervanengelenburg/msd" target="_blank"
@@ -175,7 +178,7 @@
         <a href="https://www.nii.ac.jp/dsc/idr/en/lifull/" style="color: dodgerblue;">LIFULL</a>, in terms of complexity and better represents what could be found in the real-world.
         </br></br>
         <b>Current models are not powerful enough</b> —
-        Most interestingly is that today's models that are designed for floor plan generation — mostly specialized neural networks — seem not strong and/or smart enough to tackle the complexity of MSD.
+        Most interestingly is that today's models that are designed for floor plan generation — mostly specialized neural networks — seem not robust and/or smart enough to tackle the complexity of MSD.
         Exciting new research in floor plan generation as well as understanding lies ahead.
         </br></br>
         <b>Data formats and coding guidelines</b> —
@@ -217,19 +220,19 @@
 <section class="hero is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Dataset of MSD</h2>
+      <h2 class="title is-3">MSD Dataset</h2>
       <div class="content has-text-justified">
           <p>
             MSD is an ML-ready dataset for floor plan generation and analysis at building-level scale.
             The MSD dataset is derived from the <a href="https://zenodo.org/records/7788422" style="color: dodgerblue;">Swiss Dwellings database (v3.0.0)</a>.
-            The MSD dataset contains highly-detailed 5372 floor plans of single- as well as multi-unit building complexes across Switzerland, hence extending the building scale w.r.t. of other well know floor plan datasets.
+            The MSD dataset contains highly-detailed 5372 floor plans of single- as well as multi-unit building complexes across Switzerland, hence extending the building scale w.r.t. of other well-known floor plan datasets.
             Some highlights:
             <ul>
-              <li><b>Origin</b> — MSD is the first <em>European</em> large-scale floor plan dataset originating from;</li>
+              <li><b>Origin</b> — MSD is the first <em>European</em> large-scale floor plan dataset originating from Switzerland;</li>
               <li><b>Realism</b> — MSD is the first large-scale floor plan dataset that contains information on the <em>connectivity between the apartments</em>; in addition, <em>compass orientation</em> is included;</li>
-              <li><b>Complexity</b> — MSD exceeds other datasets in the the average number of corners per room, rooms per apartment, and apartments per floor; furthermore, MSD has the largest share of irregularly-shaped rooms;</li>
+              <li><b>Multimodality</b> — MSD exceeds other datasets in the the average number of corners per room, rooms per apartment, and apartments per floor; furthermore, MSD has the largest share of irregularly-shaped rooms;</li>
               <li><b>Information</b> — MSD contains floor plan <em>raster images</em>, <em>vectorized formats</em>, and corresponding <em>access graphs</em>;</li>
-              <li><b>Size & Diversity</b> — MSD has the largest <em>diversity of access graphs</em>.</li>
+              <li><b>Diversity</b> — MSD has the largest <em>diversity of access graphs</em>.</li>
             </ul>
           </p>
         </div>
@@ -314,7 +317,7 @@
         <!-- Your image here -->
         <img src="static/images/unet_scheme.png" alt="unet_scheme"/>
         <h2 class="subtitle has-text-centered">
-         <b> Model 2: Graph-informed U-Net (UN) </b> —
+         <b> Model 2: Graph-informed U-Net (UN)</b> —
           UN takes the building structure (image) as input to a <a href="https://arxiv.org/abs/1505.04597" style="color: dodgerblue;">U-Net</a>.
           The U-Net is composed of an encoder and decoder using the conventional up- and down-sampling 2D convolutions, resp., and includes skip connections between the encoder and decoder feature maps at equivalent feature map scales.
           A <a href="https://arxiv.org/abs/1609.02907" style="color: dodgerblue;">graph convolutional network</a> is used to map the zoning graph to a feature vector which is concatenated to the latent space of the U-Net.
