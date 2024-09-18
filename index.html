@@ -174,15 +174,19 @@
       <h2 class="subtitle has-text-centered">
         <b>A realistic floor plan dataset</b> —
         In this article, we propose and benchmark a new large-scale floor plan dataset, which we call [<b>M</b>]odified [<b>S</b>]wiss [<b>D</b>]wellings.
-        MSD exceeds other floor plan dataset, such as <a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a> and
+        <a href="https://www.kaggle.com/datasets/caspervanengelenburg/modified-swiss-dwellings" style="color: dodgerblue;">MSD</a> exceeds other floor plan dataset, such as <a href="http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html" style="color: dodgerblue;">RPLAN</a> and
         <a href="https://www.nii.ac.jp/dsc/idr/en/lifull/" style="color: dodgerblue;">LIFULL</a>, in terms of complexity and better represents what could be found in the real-world.
         </br></br>
         <b>Current models are not powerful enough</b> —
-        Most interestingly is that today's models that are designed for floor plan generation — mostly specialized neural networks — seem not robust and/or smart enough to tackle the complexity of MSD.
+        Most interestingly is that today's models that are designed for floor plan generation – mostly specialized neural networks – seem not robust and/or smart enough to tackle the complexity of MSD.
         Exciting new research in floor plan generation as well as understanding lies ahead.
         </br></br>
-        <b>Data formats and coding guidelines</b> —
-        The floor plans come in various forms (image, vector, and graph).
+        <b>Multimodality and coding guidelines</b> —
+        The floor plans come in various linked modalities: image, geometry, and graph.
+        The main data container is the graph (`networkx.Graph()` or `torch_geometric.data.Data()`)
+        on-top-of which
+        the room shapes and types (as node-level attributes),
+        the connectivity types (as edge-level attributes) and the full image (as graph-level attribute) are modelled.
         Additionally, we prepared <a href="https://github.com/cvaad-workshop/iccv23-challenge/blob/main/guidelines.ipynb" style="color: dodgerblue;">clear coding guidelines</a> on how to effectively load
         and visualize the floor plans and their corresponding access graphs.
       </h2>
@@ -225,7 +229,7 @@
           <p>
             MSD is an ML-ready dataset for floor plan generation and analysis at building-level scale.
             The MSD dataset is derived from the <a href="https://zenodo.org/records/7788422" style="color: dodgerblue;">Swiss Dwellings database (v3.0.0)</a>.
-            The MSD dataset contains highly-detailed 5372 floor plans of single- as well as multi-unit building complexes across Switzerland, hence extending the building scale w.r.t. of other well-known floor plan datasets.
+            The MSD dataset contains 5372 highly-detailed floor plans of single- as well as multi-unit building complexes across Switzerland, hence extending the building scale w.r.t. of other well-known floor plan datasets.
             Some highlights:
             <ul>
               <li><b>Origin</b> — MSD is the first <em>European</em> large-scale floor plan dataset originating from Switzerland;</li>
